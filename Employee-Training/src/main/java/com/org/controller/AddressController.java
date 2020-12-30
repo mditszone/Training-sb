@@ -23,8 +23,6 @@ public class AddressController {
 	@Autowired
 	private AddressService addressService;
 
-	// public String final GETAddress = "/getAddress";
-
 	@GetMapping("/getAddress")
 	public List<Address> getAllAddress() {
 		return addressService.getAddress();

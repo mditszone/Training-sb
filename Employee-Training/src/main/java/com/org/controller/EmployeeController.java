@@ -50,7 +50,7 @@ public class EmployeeController {
 	@DeleteMapping("/delete/{id}")
 	public String deleteEmployee(@PathVariable int id) throws ResourceNotFoundException {
 
-		employeeService.deleteEmployee(id); // delete the employee
+		employeeService.deleteEmployee(id); 
 
 		return "Employee Id is Deleted " + id;
 
